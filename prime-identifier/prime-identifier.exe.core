@@ -1,0 +1,19 @@
+[main] prime-identifier 1000 (0) exception: trapped!
+[main] prime-identifier 1000 (0) exception: code 0xC0000005 at 0x401185
+[main] prime-identifier 1000 (0) exception: ax 0x4 bx 0xA031A00 cx 0x4 dx 0x4
+[main] prime-identifier 1000 (0) exception: si 0x246FD9C di 0x401000 bp 0x246FDB8 sp 0x246FD80
+[main] prime-identifier 1000 (0) exception: exception is: STATUS_ACCESS_VIOLATION
+[main] prime-identifier 1000 (0) stack: Stack trace:
+[main] prime-identifier 1000 (0) stack: frame 0: sp = 0x246F708, pc = 0x6100A2C3
+[main] prime-identifier 1000 (0) stack: frame 1: sp = 0x246F744, pc = 0x77CB85D2
+[main] prime-identifier 1000 (0) stack: frame 2: sp = 0x246F768, pc = 0x77CB85A4
+[main] prime-identifier 1000 (0) stack: frame 3: sp = 0x246F830, pc = 0x77C96CA6
+[main] prime-identifier 1000 (0) stack: frame 4: sp = 0x246FDB8, pc = 0x61004402
+[main] prime-identifier 1000 (1) stack: frame 5: sp = 0x246FF3C, pc = 0x61004420
+[main] prime-identifier 1000 (0) stack: frame 6: sp = 0x246FF48, pc = 0x41326E
+[main] prime-identifier 1000 (0) stack: frame 7: sp = 0x246FF58, pc = 0x40103A
+[main] prime-identifier 1000 (0) stack: frame 8: sp = 0x246FF74, pc = 0x76406739
+[main] prime-identifier 1000 (0) stack: frame 9: sp = 0x246FF84, pc = 0x77C88AFF
+[main] prime-identifier 1000 (0) stack: frame 10: sp = 0x246FFDC, pc = 0x77C88ACD
+[main] prime-identifier 1000 (0) stack: frame 11: sp = 0x246FFEC, pc = 0x0
+[main] prime-identifier 1000 (0) stack: End of stack trace
