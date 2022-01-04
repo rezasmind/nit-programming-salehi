@@ -8,26 +8,26 @@ using namespace std;
 int main()
 {
 
-    // define array of datas
+    // sakht vector haie dataha
     vector<vector<float> > dataA;
     vector<vector<float> > dataB;
     vector<vector<float> > dataC;
     vector<vector<float> > dataD;
     vector<vector<float> > dataE;
 
-    // reading notepad files
+    // khondan file haie text
     ifstream fileA("a.txt");
     ifstream fileB("b.txt");
     ifstream fileC("c.txt");
     ifstream fileD("d.txt");
 
-    // number of lines
+    // tedad khat haie file
     int numLinesA = 0;
     int numLinesB = 0;
     int numLinesC = 0;
     int numLinesD = 0;
 
-    // fileA data to dataA without sstream
+    // ersal az fileA be dataA
     string lineA;
     getline(fileA, lineA);
     while (getline(fileA, lineA))
@@ -49,7 +49,7 @@ int main()
         dataA.push_back(temp);
     }
 
-    // fileB data to dataB without sstream
+    // ersal az fileB be dataB
     string lineB;
     getline(fileB, lineB);
     while (getline(fileB, lineB))
@@ -71,7 +71,7 @@ int main()
         dataB.push_back(temp);
     }
 
-    // fileC data to dataC without sstream
+    // ersal az fileC be dataC
     string lineC;
     getline(fileC, lineC);
     while (getline(fileC, lineC))
@@ -93,7 +93,7 @@ int main()
         dataC.push_back(temp);
     }
 
-    // fileD data to dataD without sstream
+    // ersal az fileD be dataD
     string lineD;
     getline(fileD, lineD);
     while (getline(fileD, lineD))
@@ -115,7 +115,7 @@ int main()
         dataD.push_back(temp);
     }
 
-    // Take the first two columns of each vector
+    // gereftan 2 soton aval har file
     vector<vector<float> > dataA2;
     vector<vector<float> > dataB2;
     vector<vector<float> > dataC2;
@@ -153,7 +153,7 @@ int main()
         dataD2.push_back(temp);
     }
 
-    // Take the second two columns of each vector
+    // gereftan 2 soton dovom har file
     vector<vector<float> > dataA3;
     vector<vector<float> > dataB3;
     vector<vector<float> > dataC3;
@@ -191,10 +191,13 @@ int main()
         dataD3.push_back(temp);
     }
 
+
     vector<float> temp;
     vector<float> temp2;
     vector<float> temp3;
     vector<float> temp4;
+
+    // moghayese 2 soton dovom data 1 ba 2 soton aval data 2 va peida kardan moshtarak ha
     for (int i = 0; i < numLinesA; i++)
     {
         bool found = false;
@@ -215,6 +218,8 @@ int main()
         }
     }
 
+    // moghayese 2 soton dovom data 2 ba 2 soton aval data 3 va peida kardan moshtarak ha
+
     for (int i = 0; i < numLinesB; i++)
     {
         bool found = false;
@@ -231,6 +236,7 @@ int main()
         }
     }
 
+    // moghayese 2 soton dovom data 3 ba 2 soton aval data 4 va peida kardan moshtarak ha
     for (int i = 0; i < numLinesC; i++)
     {
         bool found = false;
@@ -248,6 +254,7 @@ int main()
         }
     }
 
+    // moghayese 2 soton dovom data 4 ba 2 soton aval data 1 va peida kardan moshtarak ha
     for (int i = 0; i < numLinesD; i++)
     {
         bool found = false;
@@ -263,20 +270,20 @@ int main()
         }
     }
 
-    // put all temp vectors into one vector
+    // jame kardan hame vector ha dar yek vector
     vector<vector<float> > tempVec;
     tempVec.push_back(temp);
     tempVec.push_back(temp2);
     tempVec.push_back(temp3);
     tempVec.push_back(temp4);
 
-    // put tempVec into dataE
+    // ersal vector tempVec be vector dataE
     for (int i = 0; i < tempVec.size(); i++)
     {
         dataE.push_back(tempVec[i]);
     }
 
-    // put everyitem of dataE into a file
+    // sakhte file text as dataE
     ofstream fileE;
     fileE.open("result.txt");
     for (int i = 0; i < dataE.size(); i++)
@@ -289,7 +296,7 @@ int main()
     }
     fileE.close();
 
-    // print dataE array
+    // print vector dataE
     for (int i = 0; i < dataE.size(); i++)
     {
         for (int j = 0; j < dataE[i].size(); j++)
