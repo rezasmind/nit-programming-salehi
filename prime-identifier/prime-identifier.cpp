@@ -10,7 +10,7 @@ int main()
 {
     ofstream outfile ("nums.txt");
     int i, chk=0, j;
-    for(i=1; i<=100; i++)
+    for(i=1000; i<=9999; i++)
     {
         for(j=2; j<i; j++)
         {
@@ -20,7 +20,7 @@ int main()
                break;
            }
         }
-        if(chk==0 && i!=1) 
+        if(chk==0) 
         {
             cout<<i<<endl;
             outfile << i << endl;

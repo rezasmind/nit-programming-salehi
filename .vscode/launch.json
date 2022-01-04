@@ -9,9 +9,9 @@
         ""
       ],
       "stopAtEntry": false,
-      "cwd": "d:/Project/nit-programming-salehi",
+      "cwd": "d:/Project/nit-programming-salehi/circular-search",
       "environment": [],
-      "program": "d:/Project/nit-programming-salehi/build/Debug/outDebug",
+      "program": "d:/Project/nit-programming-salehi/circular-search/build/Debug/outDebug",
       "internalConsoleOptions": "openOnSessionStart",
       "MIMode": "gdb",
       "miDebuggerPath": "C:/cygnus/cygwin-b20/H-i586-cygwin32/bin/gdb.exe",
